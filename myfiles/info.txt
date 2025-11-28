@@ -1,0 +1,13 @@
+This file is created for Git commands demo.
+git checkout -b feature-courses
+git add features/course_registration.txt
+git commit -m "add course registration feature"
+
+git checkout -b feature-events
+git add features/event_calendar.txt
+git commit -m "add event calendar feature"
+
+git checkout main
+git merge feature-courses
+git merge feature-events
+git push origin main
